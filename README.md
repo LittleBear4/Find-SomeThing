@@ -10,7 +10,7 @@
 ### 使用
 
 - 第一次使用脚本请运行pip3 install -r requirements.txt
-- 安装指纹库 python -i
+- 安装指纹库 python scan.py -i
 - python scan.py -m -p -u
 - -m 执行框架检测 -p 可以进行批量的脆弱点检测  可单独使用
 - -u 指定目标  -f 指定文件批量检测    
