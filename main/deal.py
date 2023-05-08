@@ -58,6 +58,9 @@ def RequestHeader():
 #数据处理
 def frameDataDeal(data):
     #print(data)
+    vulnerabilities=str(data[3])
+    vuln=vulnerabilities.split('|')
+    
     result=str(data[0])
     #print(result)
     data=re.findall('\[ (.*) \]', result)
@@ -67,6 +70,7 @@ def frameDataDeal(data):
     table=data.split('|')
     #print(table)
     table[1]=re.findall('m\[(.*)\]', table[1])
-    #print(table)
+    table.append(vuln[6])
     
+    #print(table)
     return table

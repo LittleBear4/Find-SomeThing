@@ -49,7 +49,7 @@ def API2(target_url):
     data = f.buffer.read().decode(encoding='utf8')
         #print(data)
     data =data.split('\r\n')
-        #print(data)
+    #print(data)
     content=deal.frameDataDeal(data)
     #print(content)
     output.FrameOutPut(content)

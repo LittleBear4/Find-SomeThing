@@ -34,8 +34,8 @@ def FrameOutPut(data):
         Framename=(data[1])[0].replace('\"', '')
     else:
         Framename=None
-    code=data[3].strip()
-    info=now_time()+'\[{}]  {} <{}>  响应大小:{}  '.format(Framename,data[0].strip(),data[4].strip(),data[2].strip())
+    #code=data[3].strip()
+    info=now_time()+'\[{}]  {} <{}>  响应大小:{} 权重:{} '.format(Framename,data[0].strip(),data[4].strip(),data[2].strip(),data[5].strip())
     color.green(info)
 def FrameTitle():
     print('--------------------------------------------------------------------------')
