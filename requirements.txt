@@ -1,0 +1,6 @@
+click
+pyfiglet
+PyYAML
+requests
+rich
+urllib3
