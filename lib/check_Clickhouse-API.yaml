@@ -1,0 +1,12 @@
+name: Find-Clickhouse_REST_API
+rules:
+  - method: GET
+    poc: 
+        - /ping
+    body:
+
+    check: No Content
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

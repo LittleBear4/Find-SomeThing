@@ -1,0 +1,13 @@
+name: Find-Hadoop
+rules:
+  - method: GET
+    poc: 
+        - /
+        - /cluster
+    body:
+    
+    check: hadoop
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

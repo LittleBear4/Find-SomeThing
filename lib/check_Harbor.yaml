@@ -1,0 +1,13 @@
+name: Find-Harbor API
+rules:
+  - method: GET
+    poc: 
+        - /api/systeminfo
+        - /harbor/api/systeminfo
+    body:
+        
+    check: harbor_version
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

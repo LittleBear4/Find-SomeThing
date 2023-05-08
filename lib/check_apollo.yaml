@@ -1,0 +1,12 @@
+name: Find-apollo- 未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /apps
+    body:
+
+    check: ownerName
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

@@ -1,0 +1,17 @@
+name: Find-Actuator API 未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /env
+        - /actuator/env
+        - /manage/env
+        - /management/env
+        - /api/env
+        - /api/actuator/env
+    body:
+        
+    check: 'java.runtime.version'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

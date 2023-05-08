@@ -1,0 +1,13 @@
+name: Find-Nacos
+rules:
+  - method: GET
+    poc: 
+        - /nacos/
+        - /
+    body:
+
+    check: <title>Nacos</title>
+detail:
+  author: LittleBear4 
+  links: 
+    - https://xxxxxx

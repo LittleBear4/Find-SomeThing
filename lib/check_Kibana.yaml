@@ -1,0 +1,12 @@
+name: Find-Kibana 未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /app/kibana
+    body:
+
+    check: 'kibanaWelcomeView'
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

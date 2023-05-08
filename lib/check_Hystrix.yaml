@@ -1,0 +1,15 @@
+name: Find-Hystrix
+rules:
+  - method: GET
+    poc: 
+        - /hystrix
+        - /api/hystrix
+        - /actuator/hystrix
+        - /
+    body:
+        
+    check: '>Hystrix Dashboard<'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

@@ -1,0 +1,13 @@
+name: Find-Nacos-noauth
+rules:
+  - method: GET
+    poc: 
+        - /v1/auth/users?pageNo=1&pageSize=10
+        - /nacos/v1/auth/users?pageNo=1&pageSize=10
+    body:
+
+    check: '1'
+detail:
+  author: LittleBear4 
+  links: 
+    - https://xxxxxx

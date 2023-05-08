@@ -1,0 +1,13 @@
+name: Find-jmx-console
+rules:
+  - method: GET
+    poc: 
+        - /jmx-console/
+        - /
+    body:
+
+    check: JMX
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

@@ -1,0 +1,17 @@
+name: Find-xxl-Job
+rules:
+  - method: GET
+    poc: 
+        - /toLogin
+        - /xxl-job/toLogin
+        - /xxl-job-admin/toLogin
+        - /xxl/toLogin
+        - /xxljob/toLogin
+        - /
+    body:
+
+    check: '<b>XXL</b>JOB'
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

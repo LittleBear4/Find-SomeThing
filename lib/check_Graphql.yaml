@@ -1,0 +1,15 @@
+name: Find-Graphql 接口
+rules:
+  - method: GET
+    poc: 
+        - /graphql
+        - /v2/graphql
+        - /v1/graphql
+        - /
+    body:
+    
+    check: 'query missing'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

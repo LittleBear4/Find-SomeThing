@@ -1,0 +1,12 @@
+name: Find-Apereo_cas
+rules:
+  - method: GET
+    poc: 
+        - /cas/login
+    body:
+        
+    check: cas
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

@@ -1,0 +1,13 @@
+name: Find-Druid 未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /druid/webapp.json
+
+    body:
+        
+    check: RequestCount
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

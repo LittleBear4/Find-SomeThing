@@ -1,0 +1,14 @@
+name: Find-Grafana
+rules:
+  - method: GET
+    poc: 
+        - /monitor/login
+        - /grafana/login
+        - /login
+    body:
+
+    check: Grafana</title>
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

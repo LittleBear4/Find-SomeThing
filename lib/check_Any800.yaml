@@ -1,0 +1,12 @@
+name: Find-Any800
+rules:
+  - method: GET
+    poc: 
+        - /any800/echatManager.do
+    body:
+
+    check: Any800全渠道智能客服
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

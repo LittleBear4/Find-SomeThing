@@ -1,0 +1,16 @@
+name: Find-Oracle Weblogic 控制台
+rules:
+  - method: GET
+    poc: 
+        - /#/console/css/test.css
+        - /#/../console/css/test.css
+        - /#/../../console/css/test.css
+        - /console/css/test.css;/../../../
+        - /decision/system/info
+    body:
+
+    check: WLS Administration Console
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

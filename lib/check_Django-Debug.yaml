@@ -1,0 +1,14 @@
+name: Find-Django-开启调试模式
+rules:
+  - method: GET
+    poc: 
+        - /lljfafd
+        - /api/lljfafd
+
+    body:
+        
+    check: 'DEBUG = True'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

@@ -1,0 +1,12 @@
+name: Elasticsearch 未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /_cat
+    body:
+        
+    check: '/_cat/master'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx 

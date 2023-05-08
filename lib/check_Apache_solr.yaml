@@ -1,0 +1,13 @@
+name: Find-Apache solr未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /solr/admin/cores?wt=json&indexInfo=false
+        - /admin/cores?wt=json&indexInfo=false
+    body:
+    
+    check: responseHeader
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

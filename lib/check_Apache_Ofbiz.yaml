@@ -1,0 +1,12 @@
+name: Find-Apache Ofbiz
+rules:
+  - method: GET
+    poc: 
+        - /webtools/control/main
+    body:
+    
+    check: Ofbiz
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

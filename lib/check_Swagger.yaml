@@ -1,0 +1,17 @@
+name: Find-Swagger 文档接口
+rules:
+  - method: GET
+    poc: 
+        - /swagger.json
+        - /api/swagger.json
+        - /swagger/v1/swagger.json
+        - /v2/api-docs
+        - /api/v2/api-docs
+        - /api/v2/swagger.json
+    body:
+        
+    check: swagger
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

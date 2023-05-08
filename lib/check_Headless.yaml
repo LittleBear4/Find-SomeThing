@@ -1,0 +1,12 @@
+name: Find-Headless- 未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /json/version
+    body:
+
+    check: 'Protocol-Version'
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

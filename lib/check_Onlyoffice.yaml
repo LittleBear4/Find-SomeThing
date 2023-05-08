@@ -1,0 +1,12 @@
+name: Find-Onlyoffice-未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /ConvertService.ashx
+    body:
+
+    check: '<Error>-7</Error>'
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx

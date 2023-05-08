@@ -1,0 +1,13 @@
+name: Find-Ecology 文档
+rules:
+  - method: GET
+    poc: 
+        - /help/sys/help.html
+        - /js
+    body:
+        
+    check: '$(this).attr("src","image/btn_help_click'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx 

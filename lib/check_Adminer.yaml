@@ -1,0 +1,16 @@
+name: Find-Adminer.php
+rules:
+  - method: GET
+    poc: 
+        - /admin/adminer.php
+        - /adminer/adminer.php
+        - /adminer.php
+        - /
+    body:
+
+
+    check: '- Adminer'
+detail:
+  author: LittleBear4   
+  links: 
+    - https://xxxxxx
