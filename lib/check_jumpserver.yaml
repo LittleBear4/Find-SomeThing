@@ -1,0 +1,13 @@
+name: Find-JumpServer 
+rules:
+  - method: GET
+    poc: 
+        - /core/auth/login/
+        - /
+    body:
+
+    check: JumpServer
+detail:
+  author: LittleBear4  
+  links: 
+    - https://xxxxxx
