@@ -4,3 +4,5 @@ PyYAML
 requests
 rich
 urllib3
+shutil
+zipfile
