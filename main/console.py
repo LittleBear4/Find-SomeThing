@@ -2,6 +2,7 @@ import argparse
 from main import deal
 from main import frame
 from main import ask
+from main import Update
 #命令行参数
 def parse_args():   
     parser = argparse.ArgumentParser()
@@ -10,7 +11,8 @@ def parse_args():
     parser.add_argument('-m', '--middleware', dest='middleware', help='Target middleware',action='store_true')
     parser.add_argument('-p', '--poc', dest='poc', help='Proof of concept',action='store_true')
     parser.add_argument('-o', '--outputurl', dest='outputurl', help='Output file name')
-    parser.add_argument('-i', '--install', dest='install', help='finger isntall',action='store_true')
+    parser.add_argument('-i', '--install', dest='install', help='finger install',action='store_true')
+    parser.add_argument('-up', '--update', dest='update', help='Update the yaml file',action='store_true')
     return parser.parse_args()
     
  
@@ -19,20 +21,29 @@ def entrance():
     args = parse_args()
     if args.file:
         file=args.file
-        if args.middleware:
+        if not args.middleware and not args.poc:
             frame.check_frame(file).fileDeal()
-        if args.poc:    
+            file=deal.Deal(file).fileDeal()            
+        elif args.middleware:
+            frame.check_frame(file).fileDeal()
+        elif args.poc:    
             file=deal.Deal(file).fileDeal()
         
     if args.url:
         url=args.url
-        if args.middleware:
+        if not args.middleware and not args.poc:    
             frame.API2(url)
-        if args.poc: 
             target=deal.Deal(url).RequestHeadDeal()
             ask.Request(target)
-       
+        elif args.middleware:
+            frame.API2(url)
+        elif args.poc: 
+            target=deal.Deal(url).RequestHeadDeal()
+            ask.Request(target)
+
+    
     if args.install:
-    
         frame.install()
-    
+        
+    if args.update:
+        Update.CheckEnv()
