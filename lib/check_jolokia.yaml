@@ -1,11 +1,13 @@
-name: Find-Druid 未授权访问
+name: Find-jolokia
 rules:
   - method: GET
     poc: 
-        - /druid/webapp.json
+        - /jolokia/list
+        - /jolokia
+        - /actuator/jolokia
     body:
         
-    check: RequestCount
+    check: 'reloadByURL'
 detail:
   author: LittleBear4   
   links: 

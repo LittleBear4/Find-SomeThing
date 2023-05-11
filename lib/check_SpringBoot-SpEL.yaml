@@ -1,11 +1,11 @@
-name: Find-Druid 未授权访问
+name: Find-SpringBoot-SpEL
 rules:
   - method: GET
     poc: 
-        - /druid/webapp.json
+        -  /article?id=${8*8}
     body:
         
-    check: RequestCount
+    check: '64'
 detail:
   author: LittleBear4   
   links: 

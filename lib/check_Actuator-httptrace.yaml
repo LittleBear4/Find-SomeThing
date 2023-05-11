@@ -2,6 +2,7 @@ name: Find-Actuator httptrace API 未授权访问
 rules:
   - method: GET
     poc: 
+        - /httptrace
         - /actuator/httptrace
         - /jeecg-boot/actuator/httptrace
         - /actuator;/httptrace

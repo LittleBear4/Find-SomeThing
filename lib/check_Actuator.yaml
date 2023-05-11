@@ -1,11 +1,11 @@
-name: Find-Druid 未授权访问
+name: Find-Actuator
 rules:
   - method: GET
     poc: 
-        - /druid/webapp.json
+        - /actuator
     body:
         
-    check: RequestCount
+    check: '"templated":false'
 detail:
   author: LittleBear4   
   links: 

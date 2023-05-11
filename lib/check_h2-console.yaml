@@ -1,11 +1,11 @@
-name: Find-Druid 未授权访问
+name: Find-h2-console
 rules:
   - method: GET
     poc: 
-        - /druid/webapp.json
+        - /h2-console/
     body:
         
-    check: RequestCount
+    check: 'H2 Console'
 detail:
   author: LittleBear4   
   links: 

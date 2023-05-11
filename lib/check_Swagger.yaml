@@ -2,11 +2,41 @@ name: Find-Swagger 文档接口
 rules:
   - method: GET
     poc: 
+        - /api/index.html
+        - /api.html
+        - /swagger
+        - /api/swagger-ui.html
+        - /swagger-ui.html
+        - /Swagger/ui/index
+        - /api/swaggerui
+        - /swagger/ui
+        - /swagger/codes
+        - /api/swagger/ui
+        - /libs/swaggerui
+        - /swagger-resources/configuration/ui
+        - /swagger-resources/configuration/security
+        - /swagger/v1/swagger.json
+        - /swagger/v2/swagger.json
+        - /api/doc
+        - /docs/
+        - /doc.html
+        - /api-docs
+        - /v1/api-docs
+        - /v3/api-docs
+        - /swagger/swagger-ui.html
+        - /v1.x/swagger-ui.html
+        - /swagger-ui.html#/api-memory-controller
         - /swagger.json
         - /api/swagger.json
-        - /swagger/v1/swagger.json
         - /v2/api-docs
         - /api/v2/api-docs
+        - /swagger-dubbo/api-docs
+        - /user/swagger-ui.html
+        - /template/swagger-ui.html
+        - /distv2/index.html
+        - /dubbo-provider/distv2/index.html
+        - /spring-security-rest/api/swagger-ui.html
+        - /spring-security-oauth-resource/swagger-ui.html
         - /api/v2/swagger.json
     body:
         
