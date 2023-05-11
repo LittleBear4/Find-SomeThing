@@ -67,9 +67,6 @@ def Request(target_url):
                         if icon in response.text and response.status_code==200:
                             flag=True
                             output.output(flag,name,url)
-                            break
-                        else:
-                            flag=False
                     if flag == False:
                         output.output(flag,name,url)
                 
