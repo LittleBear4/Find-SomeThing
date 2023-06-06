@@ -11,7 +11,8 @@ proxy={"http":"http://127.0.0.1:8080"}
 
 
 
-def Request(target_url):
+def Request(item):
+    target_url=item['scheme'].strip()+':'+'//'+item['host'].strip()+':'+item['port'].strip()
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     output.Tag(target_url)
     #打开yaml    

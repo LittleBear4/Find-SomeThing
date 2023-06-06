@@ -30,7 +30,7 @@ class Deal:
         if ":443" in target and "://" not in target:
             target = "https://" + target
         parse1 = parse.urlparse(target)
-        print(parse1)
+        #print(parse1)
         port = str(parse1.port) 
         if not parse1.port:
             if parse1.scheme == 'http':
@@ -41,9 +41,10 @@ class Deal:
             'host': parse1.hostname,
             'port': port,
             'scheme': parse1.scheme,
+            'path':parse1.path
         }
-        target=item['scheme'].strip()+':'+'//'+item['host'].strip()+':'+item['port'].strip()
-        return target
+        #target=item['scheme'].strip()+':'+'//'+item['host'].strip()+':'+item['port'].strip()
+        return item
         
 def RequestHeader():
     random_ip = "10.0.{}.{}".format(random.randint(1, 254), random.randint(1, 254))
