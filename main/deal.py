@@ -22,7 +22,7 @@ class Deal:
         pool.join()
   
 
-    #请求协议处理：采用http还是http请求
+    #请求协议处理：采用http还是http请求这里要修改一下 处理数据出现问题
     def RequestHeadDeal(self):
         target = self.name     
         if (":80" in target or ":443" not in target) and ("http" not in target):
@@ -30,7 +30,7 @@ class Deal:
         if ":443" in target and "://" not in target:
             target = "https://" + target
         parse1 = parse.urlparse(target)
-        #print(parse1)
+        print(parse1)
         port = str(parse1.port) 
         if not parse1.port:
             if parse1.scheme == 'http':
@@ -40,9 +40,9 @@ class Deal:
         item = {
             'host': parse1.hostname,
             'port': port,
-            'scheme': parse1.scheme
+            'scheme': parse1.scheme,
         }
-        target=item['scheme']+':'+'//'+item['host']+':'+item['port']
+        target=item['scheme'].strip()+':'+'//'+item['host'].strip()+':'+item['port'].strip()
         return target
         
 def RequestHeader():
